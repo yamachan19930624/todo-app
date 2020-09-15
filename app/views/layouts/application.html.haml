@@ -13,6 +13,11 @@
   %body
     %header.header
       %p.header_pageTitle 新着記事
+      .btn-flat
+        - if !current_page?(root_path)
+          = link_to :back do
+            %p 戻る
+          
       .dropdown
         = image_tag 'Oval-2.png', class: 'header_avatar dropbtn'
         .dropdown-content
@@ -22,4 +27,5 @@
       .flash
         - flash.each do |key, value|
           %div{:class => key}= value
+      
     = yield
