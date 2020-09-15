@@ -1,0 +1,18 @@
+.container
+  %h2 borad
+.board
+  %h1.board_title= @board.title
+  .board_detail
+    = image_tag 'Oval-2.png'
+    %div
+      %p cohki0305
+      %p 2020/4/16
+  .board_detail_actions
+  .dropdown_show
+    = image_tag 'Combined Shape.svg', class: 'dropbtn_show'
+    .dropdown-content_show.mini
+      %a{:href => "#"} 編集する
+
+  .board_content
+    = @board.content
+  

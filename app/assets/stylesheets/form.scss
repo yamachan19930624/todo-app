@@ -1,0 +1,72 @@
+@import './variables';
+input, select {
+  &.text {
+    
+    width: 362px;
+    height: 40px;
+    left: 26px;
+    top: 190px;
+    
+    background: #F4F4F4;
+    border-radius: 10px;
+  }
+}
+
+label {
+  width: 44px;
+  height: 25px;
+  left: 26px;
+  top: 161px;
+  
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+h2{
+ 
+  height: 36px;
+  left: 0%;
+  right: 54.64%;
+  top: calc(50% - 36px/2);
+
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 36px;
+  /* identical to box height */
+
+
+color: #000000;
+}
+
+.field{
+  margin-top: 30px;
+}
+
+.content-text{
+ 
+  width: 362px;
+  margin: 8px 0px;
+  padding: 8px 8px;
+  min-height: 440px;
+  resize: vertical;
+  border: 1px solid #EBEBEB;
+  
+  height: 40px;
+  left: 26px;
+  top: 190px;
+    
+  background: #F4F4F4;
+  border-radius: 10px;
+  border-color: #000000;
+  border-radius: 10px;
+  margin-top: 15px;
+}
