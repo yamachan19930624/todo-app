@@ -12,7 +12,7 @@
     = image_tag 'Combined Shape.svg', class: 'dropbtn_show'
     .dropdown-content_show.mini
       = link_to '編集する', edit_board_path(@board)
-      
+      = link_to '削除する', board_path(@board), data: { method: 'delete', confirm: '本当に削除でよろしいですか？' }      
   .board_content
     = @board.content
   
