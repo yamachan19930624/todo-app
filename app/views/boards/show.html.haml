@@ -11,8 +11,8 @@
   .dropdown_show
     = image_tag 'Combined Shape.svg', class: 'dropbtn_show'
     .dropdown-content_show.mini
-      %a{:href => "#"} 編集する
-
+      = link_to '編集する', edit_board_path(@board)
+      
   .board_content
     = @board.content
   
