@@ -1,0 +1,38 @@
+@import './variables';
+
+.btn-primary {
+  position: absolute;
+  width: 362px;
+  height: 40px;
+  left: 30px;
+  top: 889px;
+  background: pink;
+  border-radius: 4px;
+  color: $btn-text-color;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Avenir;
+  font-style: normal;
+  margin-right:22px;
+  margin-bottom:32px;
+  border-color: #fff;
+}
+
+.btn-secondary{
+  position: absolute;
+  width: 362px;
+  height: 40px;
+  left: 30px;
+  top: 889px;
+  background: pink;
+  border-radius: 4px;
+  color: $btn-text-color;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Avenir;
+  font-style: normal;
+  border-color: #fff;
+}
+

@@ -1,0 +1,21 @@
+.container
+  %h2 borad
+  - @boards.each do |board|
+    = link_to (board) do
+      .card
+        .card_first_content
+          .card_title
+            = board.title       
+        .card_second_content
+          = board.content
+        .card_thrid_content
+          =image_tag 'Oval.png', class: 'card_avatar'
+        = link_to new_board_path do
+          .float_btn
+            .float_button-text
+              %h3 + Add new Board
+            
+      
+
+  
+  
