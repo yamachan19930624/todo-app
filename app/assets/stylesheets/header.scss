@@ -21,6 +21,14 @@ $header-padding-y: 16px;
     height: $avatar-size;
     border-radius: 100%;
   }
+  &_loginBtn {
+    background-color: #fff;
+    height: $avatar-size;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 12px 16px;
+    color: $primary-color;
+  }
 }
 
 .dropbtn {

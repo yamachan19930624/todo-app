@@ -17,12 +17,14 @@
         - if !current_page?(root_path)
           = link_to :back do
             %p 戻る
-          
-      .dropdown
-        = image_tag 'Oval-2.png', class: 'header_avatar dropbtn'
-        .dropdown-content
-          %a{:href => "#"} プロフィール
-          %a{:href => "#"} ログアウト
+      - if user_signed_in?    
+        .dropdown
+          = image_tag 'Oval-2.png', class: 'header_avatar dropbtn'
+          .dropdown-content
+            %a{:href => "#"} プロフィール 
+            = link_to 'ログアウト', destroy_user_session_path, data: { method: 'delete' }        
+      - else
+        = link_to 'ログイン', new_user_session_path, class: 'header_loginBtn'
     - if flash.present?
       .flash
         - flash.each do |key, value|
