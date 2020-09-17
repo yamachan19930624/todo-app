@@ -4,15 +4,13 @@
   %h1.board_title= @board.title
   .board_detail
     = image_tag 'Oval-2.png'
-    %div
-      %p cohki0305
-      %p 2020/4/16
-  .board_detail_actions
-  .dropdown_show
-    = image_tag 'Combined Shape.svg', class: 'dropbtn_show'
-    .dropdown-content_show.mini
-      = link_to '編集する', edit_board_path(@board)
-      = link_to '削除する', board_path(@board), data: { method: 'delete', confirm: '本当に削除でよろしいですか？' }      
-  .board_content
-    = @board.content
-  
+  - if user_signed_in?
+    .board_detail_actions
+      .dropdown_show
+        = image_tag 'Combined Shape.svg', class: 'dropbtn_show'
+        .dropdown-content_show.mini
+          = link_to '編集する', edit_board_path(@board)
+          = link_to '削除する', board_path(@board), data: { method: 'delete', confirm: '本当に削除でよろしいですか？' }      
+      .board_content
+        = @board.content
+    
